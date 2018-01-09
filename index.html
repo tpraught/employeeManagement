@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Employee Tracker</title>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+
+  	<header>
+  		<h1>Employee Data Management</h1>
+  	</header>
+
+  	<section id="currentEmployees">
+  		<h2>Top Articles</h2>
+  		<div id="articles"></div>
+  	</section>
+
+    <section id="addEmployee">
+
+    <h2>Search Parameters</h2>
+
+      <form>
+        <h3>Search Terms:</h3>
+        <input type="text" name="searchTerms" id="searchTerms">
+        
+        <h3>Number of Records to Retrieve:</h3>
+        <select id="limit" name="articleLimit">
+          <option value="1">1</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+        </select>
+        
+        <h3>Start Year <em>(Optional)</em>:</h3>
+        <input type="text" name="startYear" id="startYear">
+
+        <h3>End Year <em>(Optional)</em>:</h3>
+        <input type="text" name="endYear" id="endYear">
+
+        <input type="submit" value="Submit" id="searchButton">
+
+        <input type="button" value="clear" id="clearButton">
+    </form> 
+
+    </section>
+
+  	<footer>
+  	</footer>
+
+
+	<!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+	<script src="assets/js/app.js"></script>
+
+  </body>
+</html>

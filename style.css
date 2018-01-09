@@ -1,0 +1,54 @@
+body {
+	background:#ffffff;
+	font-family: arial,helvetica,sans-serif;
+	font-weight:normal;
+	color:#20315a;
+	position: relative;
+	width:1280px;
+	max-width:100%;
+	margin:0 auto;
+}
+
+header {
+	background:#20315a;
+	text-align:center;
+	margin:0 0 30px 0;
+}
+
+h1 {
+	color:#ffffff;
+	font-size:60px;
+	font-weight:bold;
+	padding:50px 0;
+}
+
+#parameters, #topArticles {
+	border: 1px solid #20315a;
+	margin:0 0 30px 0;
+}
+
+#articles {
+	padding:20px;
+}
+
+h2 {
+	color:#ffffff;
+	background:#20315a;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px;
+}
+
+form {
+	padding:20px;
+}
+
+h3 {
+	font-size:18px;
+	font-weight:bold;
+	margin:;
+}
+
+input, select {
+	width:100%;
+}
