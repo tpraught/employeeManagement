@@ -3,44 +3,50 @@
   <head>
     <meta charset="UTF-8">
     <title>Employee Tracker</title>
-  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
   <body>
 
   	<header>
-  		<h1>Employee Data Management</h1>
+  		<h1>Employee Data Management<br /><span>A Comprehensive Directory of Employee Billable Hours</h1>
   	</header>
 
   	<section id="currentEmployees">
-  		<h2>Top Articles</h2>
-  		<div id="articles"></div>
+  		<h2>Current Employees</h2>
+  		<table id="employees">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Role</th>
+                <th>Start Date</th>
+                <th>Months Worked</th>
+                <th>Monthly Rate ($)</th>
+                <th>Total Billed ($)</th>
+            </tr>
+        </thead>      
+      </table>
   	</section>
 
     <section id="addEmployee">
 
-    <h2>Search Parameters</h2>
+    <h2>Add Employee</h2>
 
       <form>
-        <h3>Search Terms:</h3>
-        <input type="text" name="searchTerms" id="searchTerms">
+        <h3>Employee Name</h3>
+        <input type="text" name="name" id="name-input">
         
-        <h3>Number of Records to Retrieve:</h3>
-        <select id="limit" name="articleLimit">
-          <option value="1">1</option>
-          <option value="5">5</option>
-          <option value="10">10</option>
-        </select>
-        
-        <h3>Start Year <em>(Optional)</em>:</h3>
-        <input type="text" name="startYear" id="startYear">
+        <h3>Role</h3>
+        <input type="text" name="role" id="role-input">
 
-        <h3>End Year <em>(Optional)</em>:</h3>
-        <input type="text" name="endYear" id="endYear">
+        <h3>Start Date (DD/MM/YY - ex: 01/01/89)</h3>
+        <input type="text" name="startDate" id="startDate-input">
 
-        <input type="submit" value="Submit" id="searchButton">
+        <h3>Monthly Rate</h3>
+        <input type="text" name="rate" id="rate-input">
 
-        <input type="button" value="clear" id="clearButton">
+        <input type="submit" value="Submit" id="add-employee">
     </form> 
 
     </section>
@@ -48,12 +54,15 @@
   	<footer>
   	</footer>
 
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
-	<!-- jQuery -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Script -->
-	<script src="assets/js/app.js"></script>
+    <script src="master.js"></script>
 
   </body>
 </html>
